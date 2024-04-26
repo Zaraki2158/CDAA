@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Fenêtre Principale</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QComboBox" name="ListeContact">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="img">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="textBrowser"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuContact">
+    <property name="title">
+     <string>Contact</string>
+    </property>
+    <addaction name="actionAjouter"/>
+    <addaction name="actionSupprimer"/>
+    <addaction name="actionModifier"/>
+    <addaction name="actionInteractions"/>
+   </widget>
+   <widget class="QMenu" name="menuAffichage">
+    <property name="title">
+     <string>Affichage</string>
+    </property>
+    <widget class="QMenu" name="menuTri_Alphabetique">
+     <property name="title">
+      <string>Tri Alphabetique</string>
+     </property>
+     <addaction name="actionCroissant"/>
+     <addaction name="actionZ_A"/>
+    </widget>
+    <widget class="QMenu" name="menuTri_par_Date">
+     <property name="title">
+      <string>Tri par Date</string>
+     </property>
+     <addaction name="actionR_cent"/>
+     <addaction name="actionAncien"/>
+    </widget>
+    <addaction name="actionAfficheContact"/>
+    <addaction name="actionHistorique"/>
+    <addaction name="separator"/>
+    <addaction name="menuTri_Alphabetique"/>
+    <addaction name="menuTri_par_Date"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuContact"/>
+   <addaction name="menuAffichage"/>
+  </widget>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionAjouter">
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+  </action>
+  <action name="actionSupprimer">
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+  </action>
+  <action name="actionModifier">
+   <property name="text">
+    <string>Modifier</string>
+   </property>
+  </action>
+  <action name="actionAfficheContact">
+   <property name="text">
+    <string>AfficheContact</string>
+   </property>
+  </action>
+  <action name="actionHistorique">
+   <property name="text">
+    <string>Historique</string>
+   </property>
+  </action>
+  <action name="actionInteractions">
+   <property name="text">
+    <string>Interactions</string>
+   </property>
+  </action>
+  <action name="actionCroissant">
+   <property name="text">
+    <string>A-Z</string>
+   </property>
+  </action>
+  <action name="actionZ_A">
+   <property name="text">
+    <string>Z-A</string>
+   </property>
+  </action>
+  <action name="actionR_cent">
+   <property name="text">
+    <string>Récent</string>
+   </property>
+  </action>
+  <action name="actionAncien">
+   <property name="text">
+    <string>Ancien</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
